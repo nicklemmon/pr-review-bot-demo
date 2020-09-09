@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Review Badger
-        uses: nicklemmon/review-badger@v0.0.10-alpha
+        uses: nicklemmon/review-badger@v0.0.11-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ github.repository }}
