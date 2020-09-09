@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Review Badger
-        uses: nicklemmon/review-badger@v0.0.9-alpha
+        uses: nicklemmon/review-badger@v0.0.10-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
