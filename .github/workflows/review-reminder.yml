@@ -16,6 +16,5 @@ jobs:
         uses: nicklemmon/review-badger@v0.0.8-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPO: ${{ secrets.GITHUB_REPOSITORY }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
