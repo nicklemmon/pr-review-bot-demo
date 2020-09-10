@@ -3,7 +3,7 @@ name: PR Reviews Reminder
 on:
   schedule:
     # Every weekday every 2 hours during working hours, send notification
-    - cron: '0 8-17/2 * * 1-9'
+    - cron: '30 10 * * 1-5'
 
 jobs:
   pr-reviews-reminder:
