@@ -2,7 +2,8 @@ name: PR Reviews Reminder
 
 on:
   schedule:
-    - cron: '* * * * 1-5'
+    # Run every weekday at 10:30 AM EST (2:30 PM UTC)
+    - cron: '30 14 * * 1-5'
 
 jobs:
   pr-reviews-reminder:
