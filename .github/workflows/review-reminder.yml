@@ -28,7 +28,7 @@ jobs:
         uses: nicklemmon/security-badger@v0.0.3-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_REPOSITORY: 'sparkpost/2web2ui'
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
           slackChannel: '#pr-review-bot'
