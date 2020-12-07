@@ -13,10 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Security Badger
-        uses: nicklemmon/security-badger@v0.0.10-alpha
+        uses: nicklemmon/security-badger@v0.0.11-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: 'Sparkpost/2web2ui'
+          GITHUB_REPO: 'SparkPost/2web2ui'
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
           slackChannel: '#security-bot'
