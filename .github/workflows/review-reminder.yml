@@ -9,23 +9,23 @@ on:
 #     - cron: '30 14 * * 1-5'
 
 jobs:
-  pr-reviews-reminder:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Review Badger
-        uses: nicklemmon/review-badger@v0.0.20-alpha
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        with:
-          slackChannel: '#pr-review-bot'
+  # pr-reviews-reminder:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Review Badger
+  #       uses: nicklemmon/review-badger@v0.0.20-alpha
+  #       env:
+  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #         GITHUB_REPOSITORY: ${{ github.repository }}
+  #         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+  #       with:
+  #         slackChannel: '#pr-review-bot'
 
   security-reviews-reminder:
     runs-on: ubuntu-latest
     steps:
       - name: Security Badger
-        uses: nicklemmon/security-badger@v0.0.7-alpha
+        uses: nicklemmon/security-badger@v0.0.8-alpha
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: 'sparkpost/2web2ui'
